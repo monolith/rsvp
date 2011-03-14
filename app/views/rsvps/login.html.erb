@@ -1,0 +1,12 @@
+<% title "Edit RSVP" %>
+
+<div id=basic>
+  <h1>Email address</h1>
+  <p>Please enter the email address you used in for your original rsvp.</p>
+
+  <%= form_tag("/rsvps/1/edit", :method => "get") %>
+  <%= label_tag(:email, "Email") %>
+  <%= text_field_tag(:email) %>
+  <%= submit_tag("Edit") %>
+</div>
+

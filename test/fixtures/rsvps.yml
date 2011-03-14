@@ -1,0 +1,17 @@
+one:
+  name: MyString
+  email: MyString
+  mobile: MyString
+  plus: 1
+  stay: MyString
+  allergies: MyString
+  food: MyString
+
+two:
+  name: MyString
+  email: MyString
+  mobile: MyString
+  plus: 1
+  stay: MyString
+  allergies: MyString
+  food: MyString

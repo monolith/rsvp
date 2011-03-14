@@ -1,0 +1,74 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFFFFF;
+  width: 100%;
+
+  text-decoration: none;
+  font-size:11pt;
+  font-family:helvetica,Sans Serif;
+  color: #000000;
+  background-image:url('/images/invitation.jpg');
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
+  }
+
+strong {
+  color: #9a162e;
+}
+
+#basic, #details, #error, #notice, .errorExplanation {
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  float: none;
+  border: 1px dotted silver;
+  border-left: none;
+
+  width: 450px;
+  background-image:url('/images/transparency3.png');
+
+}
+
+#header {
+  width:95%;
+
+}
+
+.fieldWithErrors, .errorExplanation {
+  border-left: 5px solid #9a162e;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 445px;
+
+}
+
+#notice{
+  border: 1px dotted #F4C430;
+  background-color: #F4C430;
+}
+
+#error{
+  border: 1px dotted #9a162e;
+  background-color: #9a162e;
+  color: #FFFFFF;
+}
+
+input[type="text"], input[type="password"], input[type="checkbox"], textarea {
+
+  border: 1px dotted #9a162e;
+  background-color: whitesmoke;
+  font-color: #4f391a;
+  font-weight: bold;
+  font-family: courier;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="checkbox"]:focus, textarea:focus {
+  border: 1px dotted #9a162e;
+
+}
+
