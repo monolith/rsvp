@@ -47,12 +47,15 @@ strong {
 #notice{
   border: 1px dotted #F4C430;
   background-color: #F4C430;
+  background-image: none;
 }
 
 #error{
   border: 1px dotted #9a162e;
   background-color: #9a162e;
   color: #FFFFFF;
+  background-image: none;
+
 }
 
 input[type="text"], input[type="password"], input[type="checkbox"], textarea {
