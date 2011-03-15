@@ -6,7 +6,7 @@ class Rsvp < ActiveRecord::Base
 
   validates_uniqueness_of  :email, :message => "already used on another RSVP.  Are you trying to edit yours?"
 
-  attr_accessible :name, :attending, :email, :mobile, :plus, :stay, :allergies, :food
+  attr_accessible :name, :attending, :email, :mobile, :plus, :stay, :allergies, :food, :songs
 
 
   def validate

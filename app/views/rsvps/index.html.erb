@@ -31,6 +31,7 @@
           <%= form_tag("/rsvps/1/edit", :method => "get") %>
             <%= hidden_field_tag(:email, rsvp.email) %>
           <%= submit_tag("Edit") %>
+          </form>
         </td>
       </tr>
     <% end %>
