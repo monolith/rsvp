@@ -7,6 +7,9 @@
     <%= yield(:head) %>
   </head>
   <body>
+    <div id=home>
+      <p><div class=button><a href=http://rachelandanatoly.com>home</a></div></p>
+    </div>
     <div id="container">
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "#{name}" %>
