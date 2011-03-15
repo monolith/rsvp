@@ -18,7 +18,7 @@ strong {
   color: #9a162e;
 }
 
-#basic, #details, #error, #notice, .errorExplanation {
+#basic, #details, #error, #notice, .errorExplanation, #all {
   margin: 5px;
   padding: 5px;
   position: relative;
@@ -78,6 +78,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="checkbox"]:f
 #home {
   position:fixed;
   left: 475px;
+  top: 0px;
   border: 0px;
 }
 
@@ -113,7 +114,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="checkbox"]:f
 
 .button a:link {color:#FFF;}      /* unvisited link */
 .button a:visited {color:#FFF;}  /* visited link */
-.button a:hover {color:#CCC;}  /* mouse over link */
-.button a:active {color:#CCC;}
+.button a:hover {color:#FFF;}  /* mouse over link */
+.button a:active {color:#FFF;}
 .button a {text-decoration:none;}
 

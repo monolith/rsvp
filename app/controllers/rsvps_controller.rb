@@ -39,13 +39,14 @@ class RsvpsController < ApplicationController
   def update
     @rsvp = Rsvp.find(params[:id])
     if @rsvp.update_attributes(params[:rsvp])
-      flash[:notice] = "Successfully updated rsvp."
-      redirect_to rsvps_url
+      flash[:notice] = "YOUR RSVP HAS BEEN UPDATED"
     else
       flash[:notice] = "You are editing your RSVP"
       flash[:error] = "Sorry, something went wrong..."
-      render :action => 'edit'
     end
+
+    render :action => 'edit'
+
   end
 
   def all

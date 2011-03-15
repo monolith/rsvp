@@ -1,33 +1,39 @@
+<% title "RSVP List" %>
 
-<table border=1 cellpadding=3>
-  <tr>
-    <th>Coming?</th>
-    <th>Name</th>
-    <th>Plus</th>
-    <th>Email</th>
-    <th>Mobile</th>
-    <th>Stay</th>
-    <th>Food</th>
-    <th>Allergies</th>
-    <th>Edit</th>
 
-  </tr>
-  <% for rsvp in @rsvps %>
+<div id=all style="width:90%;">
+  <table border=1 cellpadding=3>
     <tr>
-      <td><%= rsvp.attending ? "Yes" : "No" %></td>
-      <td><%=h rsvp.name %></td>
-      <td><%=h rsvp.plus %></td>
-      <td><%=h rsvp.email %></td>
-      <td><%=h rsvp.mobile %></td>
-      <td><%=h rsvp.stay %></td>
-      <td><%=h rsvp.food %></td>
-      <td><%=h rsvp.allergies %></td>
-      <td>
-        <%= form_tag("/rsvps/1/edit", :method => "get") %>
-          <%= hidden_field_tag(:email, rsvp.email) %>
-        <%= submit_tag("Edit") %>
-      </td>
+      <th>Coming?</th>
+      <th>Name</th>
+      <th>Plus</th>
+      <th>Email</th>
+      <th>Mobile</th>
+      <th>Stay</th>
+      <th>Food</th>
+      <th>Allergies</th>
+      <th>Song Request(s)</th>
+      <th>Edit</th>
+
     </tr>
-  <% end %>
-</table>
+    <% for rsvp in @rsvps %>
+      <tr>
+        <td><%= rsvp.attending ? "Yes" : "No" %></td>
+        <td><%=h rsvp.name %></td>
+        <td><%=h rsvp.plus %></td>
+        <td><%=h rsvp.email %></td>
+        <td><%=h rsvp.mobile %></td>
+        <td><%=h rsvp.stay %></td>
+        <td><%=h rsvp.food %></td>
+        <td><%=h rsvp.allergies %></td>
+        <td><%=h rsvp.songs %></td>
+        <td>
+          <%= form_tag("/rsvps/1/edit", :method => "get") %>
+            <%= hidden_field_tag(:email, rsvp.email) %>
+          <%= submit_tag("Edit") %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
 

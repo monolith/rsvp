@@ -25,10 +25,14 @@
           </tr>
          </table>
         <p>We need your email address to contact you if there is any critical change to our plans.  You will also need this email address in case you need to edit your rsvp later.</p>
-        <p><strong>Email</strong>
+        <p><strong>Email</strong></p>
         <p><%= f.text_field :email %></p>
 
   </div>
+
+<div id=home>
+  <p><div class=button><a href=http://rachelandanatoly.com>home</a></div></p>
+</div>
 
 <div id=basic>
   <h1>Details (if attending)</h1>
@@ -36,27 +40,23 @@
 </div>
 
 <div id=details>
-    <p>
       <p>Please enter the mobile number which we can use to reach you while you are in California.  This will allow us and our wedding coordinators to reach you for things like arranging transportation, etc.</p>
-      <%= f.label :mobile %> (required field)<br />
-      <%= f.text_field :mobile %>
-    </p>
-    <p>
+
+      <p>Mobile</p>
+      <p><%= f.text_field :mobile %></p>
+
     <p>This is the address where you plan to stay the night of our wedding.  You can comeback and update the RSVP later if you do not know the address yet (you will need to use the email address you gave us above to do this).  We need this information to help arrange transportation for those staying around Joshua Tree.</p>
 
-      Address of your stay<br />
-      <%= f.text_area :stay, :rows => 7, :style=>"width:300px;" %>
-    </p>
-    <p>
-    <p>How many people are coming with you (not counting yourself)?  We are assuming that everyone is staying at the above address.</p>
-      <%= f.label :plus %><br />
-      <%= f.text_field :plus, :style => "width:30px;" %>
-    </p>
+      <p>Address of your stay</p>
+      <p><%= f.text_area :stay, :rows => 7, :style=>"width:300px;" %></p>
 
-    <p>
+    <p>How many people are coming with you (not counting yourself)?  We are assuming that everyone is staying at the above address.</p>
+      <p>Plus</p>
+      <p><%= f.text_field :plus, :style => "width:30px;" %></p>
+
       <p>The food will be family style and you will be able to eat anything you see on the table.  However, to help us better estimate our catering needs, please let us know your (including your guests) general food preference. This is for estimation, you will be able to eat anything that looks good to you.</p>
 
-      <%= f.label :food %> preference (required field if attending)<br />
+      <p>Food preference</p>
 
       <select name="rsvp[food]">
         <% if @rsvp.new_record? %>
@@ -68,14 +68,14 @@
         <option <%= @rsvp.food == "Everything" ? "selected=selected" : "" %> value="Everything">A little bit of everything</option>
       </select>
 
-    </p>
-
-    <p>
       <p>Please list any of your or your guests allergies our caterers need to know about.</p>
-      <%= f.label :allergies %><br />
-      <%= f.text_area :allergies, :rows => 7, :style=>"width:300px;" %>
+      <p>Allergies</p>
+      <p><%= f.text_area :allergies, :rows => 7, :style=>"width:300px;" %></p>
 
-    </p>
+
+      <p>Have any song requests?  List them here.</p>
+      <p><%= f.text_area :songs, :rows => 7, :style=>"width:300px;" %></p>
+
 </div>
 
 <div id=basic>
