@@ -15,7 +15,7 @@ body {
   }
 
 strong {
-  color: #9a162e;
+  color: #e24f6c;
 }
 
 #basic, #details, #error, #notice, .errorExplanation, #all {
@@ -37,7 +37,7 @@ strong {
 }
 
 .fieldWithErrors, .errorExplanation {
-  border-left: 5px solid #9a162e;
+  border-left: 5px solid #e24f6c;
   padding: 5px;
   margin-bottom: 10px;
   width: 445px;
@@ -51,8 +51,8 @@ strong {
 }
 
 #error{
-  border: 1px dotted #9a162e;
-  background-color: #9a162e;
+  border: 1px dotted #e24f6c;
+  background-color: #e24f6c;
   color: #FFFFFF;
   background-image: none;
 
@@ -60,7 +60,7 @@ strong {
 
 input[type="text"], input[type="password"], input[type="checkbox"], textarea {
 
-  border: 1px dotted #9a162e;
+  border: 1px dotted #e24f6c;
   background-color: whitesmoke;
   font-color: #4f391a;
   font-weight: bold;
@@ -71,7 +71,7 @@ input[type="text"], input[type="password"], input[type="checkbox"], textarea {
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="checkbox"]:focus, textarea:focus {
-  border: 1px dotted #9a162e;
+  border: 1px dotted #e24f6c;
 
 }
 
